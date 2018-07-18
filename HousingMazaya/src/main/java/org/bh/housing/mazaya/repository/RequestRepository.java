@@ -1,10 +1,8 @@
 package org.bh.housing.mazaya.repository;
 
 import org.bh.housing.mazaya.domain.Request;
-import org.springframework.data.repository.NoRepositoryBean;
+import org.bh.housing.mazaya.repository.generic.HMBaseRepository;
 
-@NoRepositoryBean
-public interface RequestRepository extends MazayaBaseRepository<Request, Long>{
+public interface RequestRepository extends HMBaseRepository<Request, Long>{
 
-	long countByQuery(String query);
 }
